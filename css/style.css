@@ -32,11 +32,10 @@ nav a:hover {
     text-align: center;
 }
 footer {
-    background-color: #7B797E;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }

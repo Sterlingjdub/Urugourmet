@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open-sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #495057;
+}
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #7B797E;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -14,23 +14,29 @@
 
     <div class="main-content">
         <img src="images/contactus.png" alt="Image of a table with plates and glasses">
-        <div class="container">
+        <div class="contact-container">
             <h2>Contact Us</h2>
             <div class="form-group">
                 <form id="contactForm" onsubmit="return validateForm()">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="fname">First Name *</label>
+                    <input type="text" id="fname" name="firstname"required>
         
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="lname">Last Name *</label>
+                    <input type="text" id="lname" name="lastname"required>
         
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                    <label for="email">Email *</label>
+                    <input type="text" id="email" name="email"required>
         
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" style="height:200px" required></textarea>
         
                     <input type="submit" value="Submit">
+
+                                <!-- Error message placeholders -->
+            <div id="fname-error" class="error"></div>
+            <div id="lname-error" class="error"></div>
+            <div id="email-error" class="error"></div>
+            <div id="message-error" class="error"></div>
                 </form>
             </div>
         </div>

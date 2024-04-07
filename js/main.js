@@ -79,31 +79,42 @@ function validateForm() {
     var error = "";
 
     if (fname == "") {
-        error += "First Name is required.\n";
+        error += "First Name is required.<br>";
+        document.getElementById("fname-error").innerText = "First Name is required.";
+    } else {
+        document.getElementById("fname-error").innerText = "";
     }
     if (lname == "") {
-        error += "Last Name is required.\n";
+        error += "Last Name is required.<br>";
+        document.getElementById("lname-error").innerText = "Last Name is required.";
+    } else {
+        document.getElementById("lname-error").innerText = "";
     }
     if (email == "") {
-        error += "Email is required.\n";
+        error += "Email is required.<br>";
+        document.getElementById("email-error").innerText = "Email is required.";
     } else {
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            error += "Invalid email format.\n";
+            error += "Invalid email format.<br>";
+            document.getElementById("email-error").innerText = "Invalid email format.";
+        } else {
+            document.getElementById("email-error").innerText = "";
         }
     }
     if (message == "") {
-        error += "Message is required.\n";
+        error += "Message is required.<br>";
+        document.getElementById("message-error").innerText = "Message is required.";
+    } else {
+        document.getElementById("message-error").innerText = "";
     }
 
     if (error !== "") {
-        alert(error);
         return false;
     }
 
     return true;
 }
-
 
 
     

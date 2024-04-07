@@ -4,49 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urugourmet | Home</title>
+    <title>Urugourmet | Menu</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/main.js" type="module"></script>
+    <script src="/js/menu.js" type="module"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="/images/Urugourmet_logo.jpg" alt="The Urugourmet logo"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="eventsSpecials.html">Events and Specials</a>
-            <a href="reservations.html">Reservations</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contactUs.html">Contact Us</a>
-        </nav>
-    </header>
+    <!-- Container for the header -->
+    <div id="headerContainer"></div>
+
     <div class="main-content">
-        <h1>Menu</h1>
-        <p>We offer a variety of mouthwatering dishes made from the freshest ingredients.</p>
-        <img src="restaurant.jpg" alt="Restaurant Image" style="max-width: 100%; height: auto;">
+        <img src="images/menu.png" alt="Image of the an Uruguayan grill with an assortment of meats">
     </div>
-    <footer>
-        <a href="index.html"><img src="images/UrugourmetLogoFooter.jpg" alt="Smaller version of the Urugourmet Logo"></a>
-        <p>&copy; 2024 Urugourmet. All rights reserved.</p>
-        <h3>Visit</h3>
-        <p>Address goes here</p>
-        
-        <h3>Contact</h3>
-        <p>Phone: (555)555-5555</p>
-        <p>Email: email@email.com</p>
 
-        <h3>Hours</h3>
-        <p>Mon - Sat</p>
-        <p>2:00pm - 10:00pm</p>
+<div id="menuContainer"></div>
 
-        <h3>Stay in touch</h3>
-        <input type="email">
-        <button type="submit">Submit</button>
-        <img src="images/socialMedia/facebookLogo.jpg" alt="Facebook Logo">
-        <img src="images/socialMedia/instagramLogo.jpg" alt="Instagram Logo">
-        <img src="images/socialMedia/tiktokLogo.jpg" alt="TikTok Logo">
-        <img src="images/socialMedia/whatsappLogo.jpg" alt="WhatsApp Logo">
-    </footer>
+    <!-- Container for the footer -->
+    <div id="footerContainer"></div>
 </body>
 </html>

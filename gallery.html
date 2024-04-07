@@ -4,49 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urugourmet | Home</title>
+    <title>Urugourmet | Gallery</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/main.js" type="module"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content img {
+            width: 100%;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="/images/Urugourmet_logo.jpg" alt="The Urugourmet logo"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="eventsSpecials.html">Events and Specials</a>
-            <a href="reservations.html">Reservations</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contactUs.html">Contact Us</a>
-        </nav>
-    </header>
+    <!-- Container for the header -->
+    <div id="headerContainer"></div>
+
     <div class="main-content">
+        <img src="images/gallery.png" alt="Image of a cut of steak on a grill being flipped with tongs">
         <h1>Gallery</h1>
         <p>We offer a variety of mouthwatering dishes made from the freshest ingredients.</p>
-        <img src="restaurant.jpg" alt="Restaurant Image" style="max-width: 100%; height: auto;">
     </div>
-    <footer>
-        <a href="index.html"><img src="images/UrugourmetLogoFooter.jpg" alt="Smaller version of the Urugourmet Logo"></a>
-        <p>&copy; 2024 Urugourmet. All rights reserved.</p>
-        <h3>Visit</h3>
-        <p>Address goes here</p>
-        
-        <h3>Contact</h3>
-        <p>Phone: (555)555-5555</p>
-        <p>Email: email@email.com</p>
+<div class="gallery">
+    <img src="images/UrugourmetLogoFooter.jpg" alt="Image 1" onclick="openModal('images/UrugourmetLogoFooter.jpg')">
+    <img src="images/UrugourmetLogoFooter.jpg" alt="Image 2" onclick="openModal('images/UrugourmetLogoFooter.jpg')">
+    <img src="images/UrugourmetLogoFooter.jpg" alt="Image 3" onclick="openModal('images/UrugourmetLogoFooter.jpg')">
+    <!-- Add more images here -->
+</div>
 
-        <h3>Hours</h3>
-        <p>Mon - Sat</p>
-        <p>2:00pm - 10:00pm</p>
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
 
-        <h3>Stay in touch</h3>
-        <input type="email">
-        <button type="submit">Submit</button>
-        <img src="images/socialMedia/facebookLogo.jpg" alt="Facebook Logo">
-        <img src="images/socialMedia/instagramLogo.jpg" alt="Instagram Logo">
-        <img src="images/socialMedia/tiktokLogo.jpg" alt="TikTok Logo">
-        <img src="images/socialMedia/whatsappLogo.jpg" alt="WhatsApp Logo">
-    </footer>
+<!-- <script>
+    function openModal(imagePath) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = imagePath;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script> -->
+
+    <!-- Container for the footer -->
+    <div id="footerContainer"></div>
 </body>
 </html>

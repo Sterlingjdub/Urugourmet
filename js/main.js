@@ -69,6 +69,43 @@ window.onload = function() {
         }
     });
     
+
+//Contact Us Page
+function validateForm() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error = "";
+
+    if (fname == "") {
+        error += "First Name is required.\n";
+    }
+    if (lname == "") {
+        error += "Last Name is required.\n";
+    }
+    if (email == "") {
+        error += "Email is required.\n";
+    } else {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            error += "Invalid email format.\n";
+        }
+    }
+    if (message == "") {
+        error += "Message is required.\n";
+    }
+
+    if (error !== "") {
+        alert(error);
+        return false;
+    }
+
+    return true;
+}
+
+
+
     
     
 

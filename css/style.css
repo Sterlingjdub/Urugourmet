@@ -31,33 +31,33 @@ nav a:hover {
 /* Style for the header */
 header {
     background-color: #000000; /* Change the background color as needed */
-    padding: 20px 0; /* Adjust the padding as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Distribute items evenly */
 }
 
 /* Style for the logo */
 header img {
     width: 150px; /* Adjust the width of the logo as needed */
     height: auto;
-    display: block;
 }
 
 /* Style for the navigation links */
 nav {
     text-align: center;
-    margin-top: 10px; /* Adjust the top margin as needed */
 }
 
 nav a {
     text-decoration: none;
     color: #ffffff; /* Change the color of the links as needed */
-    margin: 0 15px; /* Adjust the horizontal spacing between links as needed */
-    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0 20px; /* Adjust the horizontal spacing between links as needed */
+    font-size: 20px; /* Adjust the font size as needed */
 }
 
 nav a:hover {
     color: #555; /* Change the color of the links on hover as needed */
 }
+
 
 /* Style for the hamburger menu icon */
 .hamburger {
@@ -79,8 +79,8 @@ nav a:hover {
     }
 
     .hamburger .bar {
-        width: 25px;
-        height: 3px;
+        width: 40px;
+        height: 5px;
         background-color: #ffffff;
         margin: 5px 0;
         transition: 0.4s;
@@ -88,7 +88,7 @@ nav a:hover {
 
     /* Rotate the bars to create the "close" icon */
     .hamburger.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-6px, 5px);
+        transform: rotate(-45deg) translate(-9px, 5px);
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -96,7 +96,7 @@ nav a:hover {
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-6px, -5px);
+        transform: rotate(45deg) translate(-9px, -5px);
     }
 
     /* Display the navigation links when the hamburger menu is active */
@@ -138,7 +138,7 @@ footer {
 
 }
 
-/* Style for the container */
+/* Style for the menu container */
 #menuContainer {
     max-width: 800px;
     margin: 0 auto;
@@ -177,68 +177,88 @@ footer {
     font-size: 1em;
     line-height: 1.4;
   }
+
+  /* Style for About Us page */
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style links */
+.about-content a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #0056b3;
+}
+
+/* Style paragraphs with class 'mission' */
+.about-content .mission {
+    font-weight: bold;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .about-content {
+        padding: 10px;
+    }
+    .about-content h1 {
+        font-size: 28px;
+    }
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
   
 
   /* FOOTER */
 
-footer {
+  footer {
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
     text-align: center;
-}
-
-footer a {
-    text-decoration: none;
 }
 
 footer img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 3; /* Adjust the number of rows as needed */
 }
 
-footer p, footer h3 {
+footer h3 {
+    margin: 10px 0 5px;
+}
+
+footer p {
     margin: 5px 0;
-    text-align: left;
 }
 
-footer .address {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-}
-
-footer .contact {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-}
-
-footer .hours {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-}
-
-footer input[type="email"], footer button[type="submit"] {
-    padding: 5px;
-    width: calc(100% - 10px); /* Adjust width as needed */
-    margin-bottom: 10px;
-}
-
-footer button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-footer button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-footer .social-media {
-    margin-top: 10px;
-    grid-column: 3 / span 1;
+@media only screen and (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
 }

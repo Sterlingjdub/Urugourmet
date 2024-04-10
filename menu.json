@@ -2,57 +2,57 @@
     {
         "name": "EMPANADAS",
         "description": "Three empanadas of choice: ground beef, corn and/or ham & cheese served with Uruguayan chimichurri. *Contains wheat, eggs, dairy.",
-        "category": "Appetizer"
+        "category": "Appetizers"
     },
     {
         "name": "PICADITA",
         "description": "Uruguayan style Charcuterie Board, ham, peppered salami, mortadella, cheeses, Spanish olives, toasted French baguette, peanuts, potato chips, Uruguayan chimichurri and Chef’s selection of fruit. *Contains wheat, eggs, dairy.",
-        "category": "Appetizer"
+        "category": "Appetizers"
     },
     {
         "name": "PASCUALINA",
         "description": "Mom’s pie crust recipe filled with spinach, onions, bell peppers, carrots, bacon and hard-boiled eggs. GF crust available upon request. *Contains wheat, eggs, dairy.",
-        "category": "Appetizer"
+        "category": "Appetizers"
     },
     {
         "name": "TORTA de FIAMBRE ",
         "description": "Mom’s pie crust recipe with Chef’s favorite savory combination of ham & cheese and homemade cream of corn. GF crust available upon request. *Contains wheat, eggs, dairy.",
-        "category": "Appetizer"
+        "category": "Appetizers"
     },
     {
         "name": "CHIVITO",
         "description": "(steak sandwich) The Uruguayan favorite! Pan seared skirt steak, ham & cheese, mayonnaise, lettuce, tomatoes, onions and bell peppers, Spanish olives, bacon and egg on French baguette with Uruguayan chimichurri and one side of your choice. *Contains wheat, eggs, dairy.",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "CHURRASCO",
         "description": "Pan seared skirt steak, served on white rice with heirloom tomatoes and Uruguayan chimichurri. GF",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "PARRILLADA",
         "description": "(Barbeque Board) Variety of grilled meats and vegetables: beef short ribs, flank steak, ½ chicken, 2 chorizo sausages, 2 morcillas (savory blood sausages), tripe, tender sweetbreads, corn on the cob, red bell peppers, Uruguayan chimichurri, French baguette, and 2 sides of your choice. Serves 2-4 people. *Contains wheat, eggs, dairy.",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "CHORIPAN",
         "description": "(Chorizo Sausage sandwich) Grilled chorizo sausage with tomatoes, caramelized onions, sauteed mushrooms, slices of ham and cheese, mayonnaise, Uruguayan chimichurri and one side of your choice. *Contains wheat, eggs, dairy.",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "MILANESA",
         "description": "Your choice of flank steak, chicken breast or flounder, served with Uruguayan chimichurri. Choose from “al pan” (sandwich style), “al plato” (on a plate) or “Napolitana style” (cheese, ham, and tomatoes). Add 2 sides of your choice. *Contains wheat, eggs, dairy.",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "PASTA con SALSA CARUSO",
         "description": "(Pasta with Caruso sauce) Homemade stuffed pasta tossed in a creamy mushroom sauce. *Contains wheat, eggs, dairy.",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "ESTOFADO",
         "description": "(Braised Stew) Braised short ribs with lentils, sweet corn, chorizo sausage and vegetables. Served on white rice. GF",
-        "category": "Entree"
+        "category": "Entrees"
     },
     {
         "name": "PAPAS FRITAS",
@@ -92,21 +92,21 @@
     {
         "name": "ARROZ con LECHE",
         "description": "(Rice Pudding) Jazmin rice, milk, and coconut milk, garnished with cinnamon. Chef’s recommendations? Ask for a spoon of Dulce de Leche to sweeten things up! Dairy-free options are available upon request. *Contains dairy, egg, nut.",
-        "category": "Dessert"
+        "category": "Desserts"
     },
     {
         "name": "MARTIN FIERRO",
         "description": "Equal slices of semi-hard cheese and quince jam. *Contains dairy.",
-        "category": "Dessert"
+        "category": "Desserts"
     },
     {
         "name": "ALFAJORES de MAIZENA",
         "description": "Traditional Uruguayan dessert that consist of 2 buttery, crumbly cookies sandwiched together with Dulce de Leche and rolled in coconut flakes. *Contains wheat, eggs, dairy and nuts.",
-        "category": "Dessert"
+        "category": "Desserts"
     },
     {
         "name": "HELADO TRIPLE",
         "description": "(Ice Cream) 3 scoops of your choice. Pick between Zambaione, Vanilla, Chocolate, Strawberry and/or Dulce de Leche Granizado (caramel with chocolate chips). *Contains eggs, dairy.",
-        "category": "Dessert"
+        "category": "Desserts"
     }
 ]

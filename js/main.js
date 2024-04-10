@@ -75,6 +75,7 @@ function validateForm() {
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
     var email = document.getElementById("email").value;
+    var partySize = document.getElementById("party-size").value;
     var message = document.getElementById("message").value;
     var error = "";
 
@@ -102,6 +103,12 @@ function validateForm() {
             document.getElementById("email-error").innerText = "";
         }
     }
+    if (partySize == "" || isNaN(partySize) || partySize < 20 || partySize > 80) {
+        error += "Party Size must be a number between 20 and 80.<br>";
+        document.getElementById("party-size-error").innerText = "Party Size must be a number between 20 and 80.";
+    } else {
+        document.getElementById("party-size-error").innerText = "";
+    }
     if (message == "") {
         error += "Message is required.<br>";
         document.getElementById("message-error").innerText = "Message is required.";
@@ -115,6 +122,7 @@ function validateForm() {
 
     return true;
 }
+
 
 
     

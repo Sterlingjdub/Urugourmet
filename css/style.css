@@ -11,48 +11,46 @@ body {
 
 /* Style for the header */
 header {
-    background-color: #000000; /* Change the background color as needed */
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Distribute items evenly */
+    background-color: #000000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-/* Style for the logo */
 header img {
-    width: 150px; /* Adjust the width of the logo as needed */
+    width: 150px; 
     height: auto;
 }
 
-/* Style for the navigation links */
 nav {
     text-align: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #ffffff; /* Change the color of the links as needed */
-    margin: 0 20px; /* Adjust the horizontal spacing between links as needed */
-    font-size: 20px; /* Adjust the font size as needed */
+    color: #ffffff; 
+    margin: 0 20px; 
+    font-size: 20px; 
 }
 
 nav a:hover {
-    color: #F2D04A; /* Change the color of the links on hover as needed */
+    color: #F2D04A; 
 }
 
 
 /* Style for the hamburger menu icon */
 .hamburger {
-    display: none; /* Initially hide the hamburger menu icon */
+    display: none; 
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     nav {
-        display: none; /* Hide the navigation links on small screens */
+        display: none; 
     }
 
     .hamburger {
-        display: block; /* Display the hamburger menu icon */
+        display: block; 
         position: absolute;
         top: 20px;
         right: 20px;
@@ -67,7 +65,6 @@ nav a:hover {
         transition: 0.4s;
     }
 
-    /* Rotate the bars to create the "close" icon */
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-9px, 5px);
     }
@@ -80,21 +77,20 @@ nav a:hover {
         transform: rotate(45deg) translate(-9px, -5px);
     }
 
-    /* Display the navigation links when the hamburger menu is active */
     nav.active {
         display: block;
         position: absolute;
-        top: 70px; /* Adjust as needed */
-        right: 0px; /* Adjust as needed */
-        background-color: #000000; /* Adjust as needed */
-        padding: 10px; /* Adjust as needed */
-        border-radius: 5px; /* Adjust as needed */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        top: 70px; 
+        right: 0px; 
+        background-color: #000000; 
+        padding: 10px; 
+        border-radius: 5px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 
     nav.active a {
         display: block;
-        margin-bottom: 10px; /* Adjust as needed */
+        margin-bottom: 10px; 
     }
 }
 
@@ -109,7 +105,7 @@ nav a:hover {
 .main-content img {
     width: 100%;
     height: auto;
-    display: block; /* remove extra space below inline images */
+    display: block; 
 }
 
 footer {
@@ -119,6 +115,7 @@ footer {
 
 }
 
+
 /* Style for the menu container */
 #menuContainer {
     max-width: 800px;
@@ -126,19 +123,16 @@ footer {
     padding: 20px;
   }
   
-  /* Style for each category */
   .category {
     margin-bottom: 30px;
   }
   
-  /* Style for category headings */
   .category h2 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
   }
   
-  /* Style for menu items */
   ul {
     list-style-type: none;
     padding: 0;
@@ -148,19 +142,17 @@ footer {
     margin-bottom: 10px;
   }
   
-  /* Style for menu item names */
   ul li strong {
     font-size: 1.2em;
   }
   
-  /* Style for menu item descriptions */
   ul li {
     font-size: 1em;
     line-height: 1.4;
   }
 
-  /* Style for About Us page */
 
+  /* Style for About Us page */
   .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -172,6 +164,10 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 }
+.about-content .home-image {
+    width: 50%;
+    margin: auto;
+}
 
 .about-content p {
     font-size: 16px;
@@ -179,21 +175,39 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Media Query for responsiveness */
-@media only screen and (max-width: 600px) {
-    .modal-content {
-        padding-top: 50%;
-    }
-    .about-content {
-        padding: 10px;
-    }
-    .about-content h1 {
-        font-size: 28px;
-    }
-    .about-content p {
-        font-size: 14px;
-    }
+/* Style for Index Page */
+.index-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden; 
 }
+
+.index-content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.index-content .image-container {
+    float: right; 
+    width: 50%; 
+    margin-left: 20px; 
+}
+
+.index-content .home-image {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.index-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
 
 
 /* Contact Us Page */
@@ -208,7 +222,7 @@ footer {
 }
 
 input[type=text], textarea, select {
-    width: calc(100% - 24px); /* Adjusted width to accommodate padding and border */
+    width: calc(100% - 24px); 
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -219,8 +233,7 @@ input[type=text], textarea, select {
 }
 
 input[type=number] {
-    /* Adjusted styles for number input */
-    width: calc(100% - 24px); /* Adjusted width to accommodate padding and border */
+    width: calc(100% - 24px); 
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -237,7 +250,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: calc(100% - 24px); /* Full width button */
+    width: calc(100% - 24px); 
 }
 
 input[type=submit]:hover {
@@ -260,33 +273,12 @@ input[type=submit]:hover {
     color: red;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 600px) {
-    .contact-container {
-        width: 90%;
-    }
 
-    input[type=text], input[type=number], textarea, select {
-        width: calc(100% - 20px); /* Adjusted width for smaller screens */
-        padding: 10px; /* Reduced padding */
-        margin-bottom: 10px; /* Reduced bottom margin */
-    }
-    
-    input[type=submit] {
-        padding: 10px 20px; /* Reduced padding */
-    }
-
-    .form-group {
-        padding: 10px; /* Reduced padding */
-        margin: 10px; /* Reduced margin */
-    }
-}
 
 
 
 
 /* Gallery Page */
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -303,10 +295,10 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 767px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Display 2 images per row */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .single-row-image {
-        grid-column: span 2; /* Span two columns */
+        grid-column: span 2; 
     }
 
 }
@@ -395,7 +387,7 @@ input[type=submit]:hover {
 
 .right-column {
     grid-column: 2 / span 1;
-    text-align: center;
+    text-align: left;
 }
 
 .events-container h3 {
@@ -425,26 +417,7 @@ input[type=submit]:hover {
     text-decoration: underline;
 }
 
-/* Media Query for responsiveness */
-@media only screen and (max-width: 600px) {
-    .container-head .h1-head {
-        font-size: 1.5em;
-    }
-    .container-head p {
-        font-size: 1em;
-    }
-    .events-container {
-        grid-template-columns: 1fr; /* Switch to one column layout */
-    }
 
-    .right-column {
-        grid-column: auto; /* Reset grid column to auto for one column layout */
-        text-align: left; /* Align text to left in one column layout */
-    }
-    .left-column img {
-        grid-row-end: auto;
-    }
-}
 
 
 
@@ -465,6 +438,7 @@ footer img {
 
 footer h3 {
     margin: 10px 0 5px;
+    color: #F2D04A;
 }
 
 footer p {
@@ -495,5 +469,71 @@ footer a:hover {
 
     .ft-left, .ft-center, .ft-right {
         width: 100%;
+    }
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        padding-top: 50%;
+    }
+    .about-content {
+        padding: 10px;
+    }
+    .about-content h1 {
+        font-size: 28px;
+    }
+    .about-content p {
+        font-size: 14px;
+    }
+    
+    .index-content {
+        padding: 10px;
+    }
+    .index-content h1 {
+        font-size: 28px;
+    }
+    .index-content p {
+        font-size: 14px;
+    }
+    .index-content .image-container {
+        float: none; 
+        width: 100%; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+    input[type=text], input[type=number], textarea, select {
+        width: calc(100% - 20px); 
+        padding: 10px; 
+        margin-bottom: 10px; 
+    }
+    input[type=submit] {
+        padding: 10px 20px; 
+    }
+    .form-group {
+        padding: 10px; 
+        margin: 10px; 
+    }
+
+    
+    .container-head .h1-head {
+        font-size: 1.5em;
+    }
+    .container-head p {
+        font-size: 1em;
+    }
+    .events-container {
+        grid-template-columns: 1fr; 
+    }
+    .right-column {
+        grid-column: auto; 
+        text-align: left; 
+    }
+    .left-column img {
+        grid-row-end: auto;
     }
 }

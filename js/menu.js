@@ -6,10 +6,8 @@ fetch("menu.json")
   return response.json();
 })
 .then(menuItems => {
-  // 'menuItems' now contains the parsed JSON object
   const menuContainer = document.getElementById("menuContainer");
 
-  // Group menu items by category
   const groupedMenuItems = {};
   menuItems.forEach(item => {
     if (!groupedMenuItems[item.category]) {
@@ -18,7 +16,6 @@ fetch("menu.json")
     groupedMenuItems[item.category].push(item);
   });
 
-  // Iterate over each category and display its items
   for (const category in groupedMenuItems) {
     const categoryDiv = document.createElement("div");
     categoryDiv.classList.add("category");

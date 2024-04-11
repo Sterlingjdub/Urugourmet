@@ -11,14 +11,14 @@ body {
 
 /* Style for the header */
 header {
-    background-color: #000000; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
-    width: 150px; 
+    width: 150px;
     height: auto;
 }
 
@@ -28,29 +28,29 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #ffffff; 
-    margin: 0 20px; 
-    font-size: 20px; 
+    color: #ffffff;
+    margin: 0 20px;
+    font-size: 20px;
 }
 
 nav a:hover {
-    color: #F2D04A; 
+    color: #F2D04A;
 }
 
 
 /* Style for the hamburger menu icon */
 .hamburger {
-    display: none; 
+    display: none;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     nav {
-        display: none; 
+        display: none;
     }
 
     .hamburger {
-        display: block; 
+        display: block;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -80,17 +80,17 @@ nav a:hover {
     nav.active {
         display: block;
         position: absolute;
-        top: 70px; 
-        right: 0px; 
-        background-color: #000000; 
-        padding: 10px; 
-        border-radius: 5px; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        top: 70px;
+        right: 0px;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     nav.active a {
         display: block;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 }
 
@@ -105,7 +105,7 @@ nav a:hover {
 .main-content img {
     width: 100%;
     height: auto;
-    display: block; 
+    display: block;
 }
 
 footer {
@@ -121,39 +121,39 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .category {
+}
+
+.category {
     margin-bottom: 30px;
-  }
-  
-  .category h2 {
+}
+
+.category h2 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin-bottom: 10px;
-  }
-  
-  ul li strong {
+}
+
+ul li strong {
     font-size: 1.2em;
-  }
-  
-  ul li {
+}
+
+ul li {
     font-size: 1em;
     line-height: 1.4;
-  }
+}
 
 
-  /* Style for About Us page */
-  .about-content {
+/* Style for About Us page */
+.about-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -164,6 +164,7 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .about-content .home-image {
     width: 50%;
     margin: auto;
@@ -180,7 +181,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .index-content h1 {
@@ -190,13 +191,13 @@ footer {
 }
 
 .index-content .image-container {
-    float: right; 
-    width: 50%; 
-    margin-left: 20px; 
+    float: right;
+    width: 50%;
+    margin-left: 20px;
 }
 
 .index-content .home-image {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -221,8 +222,10 @@ footer {
     margin: 20px;
 }
 
-input[type=text], textarea, select {
-    width: calc(100% - 24px); 
+input[type=text],
+textarea,
+select {
+    width: calc(100% - 24px);
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -233,7 +236,7 @@ input[type=text], textarea, select {
 }
 
 input[type=number] {
-    width: calc(100% - 24px); 
+    width: calc(100% - 24px);
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -250,7 +253,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: calc(100% - 24px); 
+    width: calc(100% - 24px);
 }
 
 input[type=submit]:hover {
@@ -295,10 +298,11 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 767px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .single-row-image {
-        grid-column: span 2; 
+        grid-column: span 2;
     }
 
 }
@@ -361,7 +365,7 @@ input[type=submit]:hover {
     color: #F2D04A;
     font-size: 3em;
     font-family: "Euphoria Script",
-    cursive;
+        cursive;
 }
 
 .container-head p {
@@ -422,9 +426,9 @@ input[type=submit]:hover {
 
 
 
-  
 
-  /* Footer Page */
+
+/* Footer Page */
 footer {
     padding: 20px;
     text-align: center;
@@ -467,7 +471,9 @@ footer a:hover {
         justify-content: center;
     }
 
-    .ft-left, .ft-center, .ft-right {
+    .ft-left,
+    .ft-center,
+    .ft-right {
         width: 100%;
     }
 }
@@ -477,62 +483,78 @@ footer a:hover {
     .modal-content {
         padding-top: 50%;
     }
+
     .about-content {
         padding: 10px;
     }
+
     .about-content h1 {
         font-size: 28px;
     }
+
     .about-content p {
         font-size: 14px;
     }
-    
+
     .index-content {
         padding: 10px;
     }
+
     .index-content h1 {
         font-size: 28px;
     }
+
     .index-content p {
         font-size: 14px;
     }
+
     .index-content .image-container {
-        float: none; 
-        width: 100%; 
-        margin-left: 0; 
-        text-align: center; 
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
     }
 
     .contact-container {
         width: 90%;
     }
-    input[type=text], input[type=number], textarea, select {
-        width: calc(100% - 20px); 
-        padding: 10px; 
-        margin-bottom: 10px; 
-    }
-    input[type=submit] {
-        padding: 10px 20px; 
-    }
-    .form-group {
-        padding: 10px; 
-        margin: 10px; 
+
+    input[type=text],
+    input[type=number],
+    textarea,
+    select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
     }
 
-    
+    input[type=submit] {
+        padding: 10px 20px;
+    }
+
+    .form-group {
+        padding: 10px;
+        margin: 10px;
+    }
+
+
     .container-head .h1-head {
         font-size: 1.5em;
     }
+
     .container-head p {
         font-size: 1em;
     }
+
     .events-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
+
     .right-column {
-        grid-column: auto; 
-        text-align: left; 
+        grid-column: auto;
+        text-align: left;
     }
+
     .left-column img {
         grid-row-end: auto;
     }
